@@ -4,7 +4,8 @@ const formatString = function (string) {
   if (string.length <= 39) {
     console.log(string);
   }
-  if (string.length > 39) {
+  
+  else {
     console.log(string.slice(0, 40) + '...');
   }
 };
