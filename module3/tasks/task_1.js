@@ -6,16 +6,17 @@ const user = {
   hobby: 'html',
   premium: true,
 };
-console.log(user);
+
+//console.log(user);
 user.mood = 'happy';
-console.log(user);
+//console.log(user);
 user.hobby = 'skydiving';
-console.log(user);
+//console.log(user);
 user.premium = 'false';
-console.log(user);
+//console.log(user);
 
 const keys = Object.keys(user);
 
 for (const key of keys) {
-  console.log('Value: ', user[key]);
+  console.log(`${key}: ${user[key]}`);
 }

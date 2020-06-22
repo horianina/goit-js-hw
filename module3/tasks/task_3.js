@@ -2,7 +2,7 @@
 
 const findBestEmployee = function (employees) {
   let max = 0;
-  let maxName = null;
+  let maxName;
 
   for (const [name, employe] of Object.entries(employees)) {
     if (max < employe) {

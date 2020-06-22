@@ -8,7 +8,18 @@ const products = [
 ];
 
 const getAllPropValues = function (arr, prop) {
-  for (let i = 0; i < products.length; i += 1) {
+  let newArr = [];
+  for (const obj of arr) {
+    for (const key in obj) {
+      if (key === prop) {
+        newArr.push(obj[key]);
+      }
+    }
+  }
+  return newArr;
+  console.log(newArr);
+};
+/*for (let i = 0; i < products.length; i += 1) {
     let arr = Object.entries(products[i]);
 
     products[i] = arr;
@@ -20,9 +31,8 @@ const getAllPropValues = function (arr, prop) {
 
     console.log(newArr);
   }
-
   return newArr;
-};
+};*/
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
