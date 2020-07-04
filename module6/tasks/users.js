@@ -1,5 +1,4 @@
-'use strict';
-const users = [
+export default [
   {
     id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
     name: 'Moore Hensley',
@@ -85,18 +84,3 @@ const users = [
     age: 39,
   },
 ];
-
-const skills = users.reduce((allSkills, user) => {
-  allSkills.push(...user.skills);
-
-  return allSkills;
-}, []);
-console.log(skills);
-
-const set = new Set(skills);
-console.log(set);
-
-const getSortedUniqueSkills = [...set].sort();
-
-console.log(getSortedUniqueSkills);
-// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', '
